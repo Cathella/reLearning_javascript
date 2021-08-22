@@ -1,8 +1,8 @@
-// random number between 0 and 1 (Math.random())
-let num = Math.random()
+// == equality
+// === strict equality
+// >, <, <=, >=, !=, !==
 
-console.log(num)
+const myBool = 5 !== 5 && 6 === 6 // false
+const myBool2 = 5 !== 5 || 6 === 6 // true
 
-// we have two objects here
-// math and console
-// while random() and log() are their respective functions
+console.log(myBool, myBool2)
