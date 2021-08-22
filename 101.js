@@ -1,14 +1,12 @@
-{
-  // var lets you create global variables.
-  // dont use it at any time
-  var cheese = `gouda`
-}
+// popular variable types
 
-console.log(cheese) // gouda
+const num = 1
+const str = "Hey Cathie"
+const boo = true
+const nothing1 = undefined
+const nothing2 = null
 
-{
-  // let will return a reference error
-  let cheese = `gouda`
-}
-
-console.log(cheese) // gouda
+console.log(num, str, boo, nothing1, nothing2)
+console.log("number: ", num)
+console.log("string: ", str)
+console.log("boolean: ", boo)
