@@ -1,13 +1,11 @@
-// think of an array as luggage, 
-// you can add any type of cloth to it
-const myArray = [5, "cheese", true]
+const myObject = {
+  name: "Nakitto Catherine",
+  age: 29
+}
 
-// add item to an array
-// myArray.push(5)
-
-console.log(myArray)
-
-// access individual array elements.
-console.log(myArray[0])
-console.log(myArray[1])
-console.log(myArray[2])
+console.log(myObject)
+console.log(myObject.name)
+console.log(myObject.age)
+// or
+console.log(myObject["name"])
+console.log(myObject["age"])
