@@ -1,7 +1,8 @@
-// Apply operators (+, -, *, /, **, %, ++, --)
-
-let num = 1 % 1 // 0
-
-num = num + 1 // => num += 1 (compound operators)
+// random number between 0 and 1 (Math.random())
+let num = Math.random()
 
 console.log(num)
+
+// we have two objects here
+// math and console
+// while random() and log() are their respective functions
