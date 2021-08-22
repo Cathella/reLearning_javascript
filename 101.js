@@ -1,8 +1,12 @@
-// == equality
-// === strict equality
-// >, <, <=, >=, !=, !==
+const myNum = 5
 
-const myBool = 5 !== 5 && 6 === 6 // false
-const myBool2 = 5 !== 5 || 6 === 6 // true
+// if (3) => true or if ("hello") => true
+// if (-1) => true or if (" ") => true but
+// if (0) => false or if ("") => false
+// if ({}) and if ([]) => true
 
-console.log(myBool, myBool2)
+if(myNum > 3) {
+  console.log("it is true");
+} else {
+  console.log("it is false")
+}
