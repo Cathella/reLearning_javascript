@@ -1,4 +1,14 @@
-let myVar = (5 + 5 + 5) / 3 // we can declare expressions too.
-console.log(myVar)
-myVar = 6 // this is okay
-console.log(myVar) // 6
+{
+  // var lets you create global variables.
+  // dont use it at any time
+  var cheese = `gouda`
+}
+
+console.log(cheese) // gouda
+
+{
+  // let will return a reference error
+  let cheese = `gouda`
+}
+
+console.log(cheese) // gouda
