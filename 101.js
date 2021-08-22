@@ -1,11 +1,9 @@
-const myObject = {
-  name: "Nakitto Catherine",
-  age: 29
+const myFunction = (thing, thing2) => {
+  console.log(thing, thing2)
 }
 
-console.log(myObject)
-console.log(myObject.name)
-console.log(myObject.age)
-// or
-console.log(myObject["name"])
-console.log(myObject["age"])
+myFunction("Hello", "World") // invoke the function
+myFunction("-------------------------")
+myFunction("Cat", "is here")
+myFunction("-------------------------")
+myFunction("Goodbye", "dear")
