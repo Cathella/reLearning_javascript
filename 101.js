@@ -1,3 +1,4 @@
-const myVar = 5 // cant change this
+let myVar = 5 // can be changed/reassigned
 console.log(myVar)
-myVar = 6 // dont do this
+myVar = 6 // this is okay
+console.log(myVar) // 6
