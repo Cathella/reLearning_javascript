@@ -7,3 +7,25 @@ yourArray[1] = "is now a string";
 // Add items to an array with push() and unshift()
 yourArray.push(23); // adds elements to the end of an array
 yourArray.unshift("hello"); // adds elements to the beginning.
+
+// Check For The Presence of an Element With indexOf()
+function quickcheck(arr, elem) {
+  // basic if-statement
+  if (arr.indexOf(elem) >= 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+// solution 2 - using the conditional operator.
+function quickcheck2(arr, elem) {
+  return arr.indexOf(elem) >= 0 ? true : false
+}
+
+// solution 3 
+function quickcheck3(arr, elem) {
+  return arr.indexOf(elem) != -1
+}
+
+   
