@@ -55,5 +55,15 @@ foods.grapes = 35;
 foods.strawberries = 27;
 foods['soft drinks'] = 10;
 
-console.log(foods);
-   
+// Modify an Object Nested Within an Object
+let userActivity = {
+  id: 238942013552,
+  date: 'September 9, 2021',
+  data: {
+    totalUsers: 51,
+    online: 42
+  }
+};
+
+userActivity.data.online = 45;
+
