@@ -28,8 +28,8 @@ function quickcheck3(arr, elem) {
   return arr.indexOf(elem) != -1
 }
 
-// Iteration in javascript
-// every(), forEach(), map(), for()
+// Iterate through all an array's items using for loops
+// others are:- every(), forEach(), map(), for()
 
 function filteredArray(arr, elem) {
   let newArr = [];
@@ -39,8 +39,21 @@ function filteredArray(arr, elem) {
       newArr.push(arr[i]);
     }
   }
-  
+
   return newArr;
 }
 
+// Add key-value pairs to JavaScript objects
+let foods = {
+  apples: 25,
+  oranges: 32,
+  plums: 28
+};
+
+foods.bananas = 13; // use the dot operator.
+foods.grapes = 35;
+foods.strawberries = 27;
+foods['soft drinks'] = 10;
+
+console.log(foods);
    
