@@ -1,0 +1,44 @@
+// Use an Array to Store a Collection of Data
+let yourArray = [1, 99, "hello", "there", true];
+
+// Access an Array's Contents Using Bracket Notation
+yourArray[1] = "nope";
+
+// Add Items to an Array with push() and unshift()
+yourArray.push(7, 'VIII', 9); // add to the end of the array
+yourArray.unshift('I', 2, 'three'); // add to the beginning of the array
+
+// Remove Items from an Array with pop() and shift()
+function popShift(arr) {
+  let popped = arr.pop(); // pop() removes an element from the end of an array
+  let shifted = arr.shift(); // shift() removes an element from the beginning
+  return [shifted, popped];
+}
+
+// Remove Items Using splice()
+const arr = [2, 4, 5, 1, 7, 5, 2, 1];
+arr.splice(0, 1); // splice() - remove any number of consecutive elements from anywhere in an array.
+arr.splice(3);
+
+// Add Items Using splice()
+function htmlColorNames(arr) {
+  // we pass the following to splice(): The index at which to begin deleting elements (0), 
+  // the number of elements to be deleted (2), and the remaining arguments ('DarkSalmon', 'BlanchedAlmond') 
+  // will be inserted starting at that same index
+  arr.splice(0, 2, 'DarkSalmon', 'BlanchedAlmond')
+  return arr;
+}
+
+// Copy Array Items Using slice()
+function forecast(arr) {
+  // slice() copies or extracts a given number of elements to a new array, 
+  // slice() takes only 2 parameters — 
+  // the first is the index at which to begin extraction, 
+  // and the second is the index at which to stop extraction 
+  // (extraction will occur up to, but not including the element at this index)
+  let weather = arr.slice(2, 4);
+  return weather;
+}
+console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
+
+// Copy an Array with the Spread Operator
