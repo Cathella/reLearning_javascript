@@ -121,4 +121,18 @@ var myList = [
   ["curry powder", 100]
 ];
 
+// A QUEUE - is an abstract Data Structure where items are kept in order
+// - New items can be added at the back of the queue and 
+// - old items are taken off from the front of the queue.
+// Stand in Line
+function nextInLine(arr, item) {
+  arr.push(item);
+  var removed = arr.shift();
+  return removed;
+}
+var testArr = [1,2,3,4,5];
+// Display code
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
 

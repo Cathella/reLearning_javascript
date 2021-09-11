@@ -37,3 +37,46 @@ function fun2() {
 }
 
 // Local Scope and Functions
+function myLocalScope() {
+  var myVar = 5; 
+  console.log('inside myLocalScope', myVar);
+}
+myLocalScope();
+console.log('outside myLocalScope', myVar); // myVar is not defined outside of myLocalScope
+
+// Global vs. Local Scope in Functions
+// The function myOutfit will return the string sweater 
+// because the local version of the variable is present.
+var outerWear = "T-Shirt";
+function myOutfit() {
+  var outerWear = "sweater";
+  return outerWear;
+}
+myOutfit();
+
+// Return a Value from a Function with Return
+function timesFive(num) {
+  return num * 5;
+}
+var answer = timesFive(5);
+
+// Understanding Undefined Value returned from a Function
+var sum = 0;
+function addThree() {
+  sum = sum + 3;
+}
+// - The function will change the global sum variable 
+// - but the returned value of the function is undefined.
+function addFive() {
+  sum = sum + 5;
+}
+addThree();
+addFive();
+
+// Assignment with a Returned Value
+var processed = 0;
+function processArg(num) {
+  return (num + 3) / 5;
+}
+processed = processArg(7);
+
