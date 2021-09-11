@@ -63,3 +63,10 @@ var lastLetterOfLastName = lastName[lastName.length - 1];
 var lastName = "Lovelace";
 var secondToLastLetterOfLastName = lastName[lastName.length - 2];
 
+// Word Blanks - game
+var myNoun = "dog";
+var myAdjective = "big";
+var myVerb = "ran";
+var myAdverb = "quickly";
+var wordBlanks = "My " + myAdjective + " " + myNoun + " " + myVerb + " away " + myAdverb
+

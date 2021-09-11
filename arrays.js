@@ -88,5 +88,37 @@ let myNestedArray = [
   [[[['deepest']]]]
 ];
 
+// Access Multi-Dimensional Arrays With Indexes
+var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
+var myData = myArray[2][1]; // 8
+
+// Manipulate Arrays With push()
+// - way to append data to the end of an array
+var myArray = [["John", 23], ["cat", 2]];
+myArray.push(["dog", 3]);
+
+// Manipulate Arrays With pop()
+// - function to remove the last item from myArray
+var myArray = [["John", 23], ["cat", 2]];
+var removedFromMyArray = myArray.pop();
+
+// Manipulate Arrays With shift() 
+// - function to remove the first item from myArray
+var myArray = [["John", 23], ["dog", 3]];
+var removedFromMyArray = myArray.shift();
+
+// Manipulate Arrays With unshift()
+var myArray = [["John", 23], ["dog", 3]];
+myArray.shift();
+myArray.unshift(["Paul", 35], ["dog", 3]);
+
+// Shopping List
+var myList = [
+  ["soap", 1000], 
+  ["cooking oil", 500], 
+  ["tomatoes", 300], 
+  ["onions", 200], 
+  ["curry powder", 100]
+];
 
 
