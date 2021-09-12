@@ -197,3 +197,11 @@ function phoneticLookup(val) {
   return result;
 }
 phoneticLookup("charlie");
+
+// Testing Objects for Properties
+function checkObj(obj, checkProp) {
+  if (obj.hasOwnProperty(checkProp)) {
+    return obj[checkProp];
+  }
+  return "Not Found";
+}
