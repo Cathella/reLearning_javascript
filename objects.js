@@ -119,4 +119,10 @@ function getArrayOfUsers(obj) {
 }
 console.log(getArrayOfUsers(users));
 
-
+// Build JavaScript Objects
+var myDog = {
+  name: "Jerry",
+  legs: 4,
+  tails: 1,
+  friends: ["ella", "ade"]
+};
