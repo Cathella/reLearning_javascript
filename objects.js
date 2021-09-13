@@ -262,3 +262,50 @@ var myPlants = [
 ];
 var secondTree = myPlants[1].list[1];
 
+// object creation
+// - object literal notation
+let o = {a: "foo", b: 42, c: {}};
+let obj = {
+  property: function (parameters) {},
+  get property() {},
+  set property(value) {}
+};
+
+// - Object() constructor.
+let o = new Object();
+o.foo = 42;
+let obj = new Object(value)
+
+// - Object.prototype.constructor
+let o = {};
+o.constructor === Object; // true
+let o = new Object;
+o.constructor === Object; // true
+let a  = [];
+a.constructor === Array //true
+let a = new Array
+a.constructor === Array // true
+let n = new Number(3)
+n.constructor === Number // true
+
+// - Object.create()
+Object.create(proto) // syntax.
+
+const person = {
+  isHuman: false,
+  printIntroduction: function() {
+    console.log(`My name is ${this.name}. Am I human? ${this.isHuman}`);
+  }
+};
+const me = Object.create(person);
+me.name = 'Matthew'; // "name" is a property set on "me", but not on "person"
+me.isHuman = true; // inherited properties can be overwritten
+me.printIntroduction(); // expected output: "My name is Matthew. Am I human? true"
+
+// - Object.assign()
+const target = { a: 1, b: 2};
+const source = {b: 4, c: 5};
+const returnedTarget = Object.assign(target, source);
+console.log(target); // Object { a: 1, b: 4, c: 5 }
+console.log(returnedTarget); // Object { a: 1, b: 4, c: 5 }
+
